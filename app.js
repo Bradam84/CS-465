@@ -1,12 +1,13 @@
 const createError = require('http-errors');
 const express = require('express');
 const path = require('path');
+const hbs = require('hbs');
 const cookieParser = require('cookie-parser');
 const logger = require('morgan');
 
 const indexRouter = require('./app_server/routes/index');
 const usersRouter = require('./app_server/routes/users');
-const travelRouter = require('./app_server/routes.travel');
+const travelRouter = require('./app_server/routes/travel');
 
 const app = express();
 
