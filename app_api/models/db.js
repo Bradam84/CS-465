@@ -8,10 +8,16 @@ const readLine = require('readline');
 const connect = () => {
     setTimeout(() => mongoose.connect(dbURI, {
         useNewUrlParser: true,
-        useCreateIndex: true
+        useUnifiedTopology: true,
     }), 1000);
 }
-           
+
+require('./travlr');
+
+module.exports = {
+    connect,
+};
+
 mongoose.connection.on('connected', () => {                 
     console.log(`Mongoose connected to ${dbURI}`);            
 });                                                         
