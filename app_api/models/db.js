@@ -31,7 +31,7 @@ const gracefulShutdown = (msg, callback) => {
     mongoose.connection.close( () => {                        
         console.log(`Mongoose disconnected through ${msg}`);    
         callback();                                             
-    });                                                       
+    });                                                        
 };                                                          
 // For nodemon restarts                                     
 process.once('SIGUSR2', () => {                             
