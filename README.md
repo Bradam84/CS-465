@@ -2,12 +2,13 @@
 
 Executive Summary
 
-	The application being developed is a comprehensive travel website for Travlr Getaways. The application will utilize the MEAN stack to facilitate customer and administrative functions. The MEAN stack includes the following technologies, MongoDB, Express, Angular, and Node. MongoDB will provide the database to facilitate data creation and retrieval. Express provides the framework to organize the components of the website. Angular allows for dynamic content to be utilized for the website. Lastly Node allows for JavaScript on the server application.
+
+The application being developed is a comprehensive travel website for Travlr Getaways. The application will utilize the MEAN stack to facilitate customer and administrative functions. The MEAN stack includes the following technologies, MongoDB, Express, Angular, and Node. MongoDB will provide the database to facilitate data creation and retrieval. Express provides the framework to organize the components of the website. Angular allows for dynamic content to be utilized for the website. Lastly Node allows for JavaScript on the server application.
  On the customer side, users will be able to view the available room, trips, food options, and destination-related news articles. The pages on the customer-facing application will include dynamically loaded content to produce a robust and stable website. Administrative users will access a single-page application that allows them to provide updates to the website and monitor the server side of the application. This includes access to the database for analytical reports and administrative functions. 
 
 Design Constraints
 
-	The application should support cross-browser compatibility to reach a large cross-section of potential clientele. The application should also feature modern security principles to safeguard personal data. The application should also utilize design principles to ensure that the website operates regardless of the connection speed and is responsive to actions performed on the website. 
+The application should support cross-browser compatibility to reach a large cross-section of potential clientele. The application should also feature modern security principles to safeguard personal data. The application should also utilize design principles to ensure that the website operates regardless of the connection speed and is responsive to actions performed on the website. 
 	The implications of these constraints will provide users with a convenient, easy-to-use site that has the tools to protect the user. Furthermore, the constraints provide guidelines for the developers to adhere to when designing the application.  
 
 System Architecture View
@@ -18,8 +19,8 @@ Component Diagram
 
 A text version of the component diagram is available: CS 465 Full Stack Component Diagram Text Version. 
 
-	The major components of the system are the database, the client system, and the server system. The database is composed of one component and provides interfaces to both the client and server systems. On the server system at the bottom of the diagram we have Mongoose ODM which requires an interface to the Mongo database. It in turn produces an interface to the rest of the server system to link the server system to the database. Above this is the Server Session which interfaces to the Mongoose ODM and the Traveler database components. The Server session is linked to the Authentication server and exits to an interface to the client system.
-	In the client system the Client Session interfaces with the provided Server Session interface. The Client Session interfaces with the Web Browser and Traveler Portfolio. The Traveler Portfolio interfaces with the Graphic Library to provide pictures to the Web Browser. The Traveler Portfolio also interfaces with the provided interface from the database.
+The major components of the system are the database, the client system, and the server system. The database is composed of one component and provides interfaces to both the client and server systems. On the server system at the bottom of the diagram we have Mongoose ODM which requires an interface to the Mongo database. It in turn produces an interface to the rest of the server system to link the server system to the database. Above this is the Server Session which interfaces to the Mongoose ODM and the Traveler database components. The Server session is linked to the Authentication server and exits to an interface to the client system.
+In the client system the Client Session interfaces with the provided Server Session interface. The Client Session interfaces with the Web Browser and Traveler Portfolio. The Traveler Portfolio interfaces with the Graphic Library to provide pictures to the Web Browser. The Traveler Portfolio also interfaces with the provided interface from the database.
  
 Sequence Diagram
 
